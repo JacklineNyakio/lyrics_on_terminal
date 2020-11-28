@@ -52,4 +52,4 @@ defmodule LyricsOnTerminal.CLI do
 #     lyrics
 #     |> Regex.replace(~r[\\n|\\r], "\s")
 #   end
-# end
+end
