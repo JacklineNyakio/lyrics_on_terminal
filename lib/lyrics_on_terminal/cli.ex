@@ -40,7 +40,7 @@ defmodule LyricsOnTerminal.CLI do
   end
 
   defp decode_response({:ok, body}), do: body["lyrics"]
-  defp decode_response({:error, error}) do:
+  defp decode_response({:error, error}) do
     IO.puts "Error while fetching lyrics: #{error["message"]}"
     System.halt(2)
   end
